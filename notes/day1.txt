@@ -1,0 +1,157 @@
+8 Hrs 
+
+
+Day 1 - Java Script 
+Day 2 - Java Script + Library (React, jQuery... ), framework (vue, Angular)
+
+React - 
+	React Native - Mobile 
+	
+	
+	
+<html>
+
+	<head>
+		<script>
+			function hi(){
+				
+			}
+		</script>
+	</head> 
+
+
+	<body bgcolor="cyan", background="./img.jpg", font="arial">
+	</body>
+</html>
+
+sublime 
+atom 
+vs code 
+notepad ++ 
+
+
+Bajaj-Finserve 
+	script 
+		- first.js 
+	Example01.html
+		<head>
+			<script src="./script/first.js"> 
+		</head>
+		
+		<body> 
+		
+		<script src="./script/first.js"> 
+		View Component 
+			<button onclick="hello()" /> 
+		</body>
+
+
+
+alert - show message - void 
+prompt - will take the value - string 
+confirm - (OK / cancel) - boolean 
+
+
+if, switch, ternary 
+
+prompt 
+	enter name 
+	age 
+	
+	if(age>=18) {
+	you can vote : <name>
+	}else {
+		you have to wait for ___ Year <Name>
+	} 
+
+
+-------------------------------------
+
+
+
+
+function fnAddInputNumbers(){
+            num1 = parseInt(prompt('Enter number 1','10'));
+            num2 = parseInt(prompt('Enter number 2','10'));
+            alert('the sum is'+ (num1+num2));
+        }
+
+
+
+
+
+
+
+
+
+<html>
+	<head>
+	</head>
+	
+	<body>
+		<p>Hello </p> 
+		<p>hi </p> 
+	</body>
+	
+</html>
+
+global variable 
+	without var 
+		x= 10; 
+		
+local variable 
+	prefix var 
+		var x= 10 
+
+
+// overloading 
+
+void hi() {}
+void hi(int x) {}
+void hi(String x) {}
+
+
+------------------ 
+hi("Hello")
+hi(10)
+
+
+class Employee {
+	empId; 
+	empName;  
+	empSal;
+}
+
+function -> class 
+function 
+
+Object 
+Encapsulation 
+
+stack- functions 
+heap - variables 
+
+a prototype function cannot access variables or functions of private type(var) in the class 
+
+
+arrays 
+push and pop (stack) LIFO 
+unshift, shift 
+splice(index, noof_elements_to_be_deleted,  ele_to_be_added)
+splice(0,0,"hello") -> at index 0, dont delete any value, add hello 
+splice(3,2,"welcome", "india")
+splice(2,2)
+
+
+
+java script : 
+1. you have to accept numbers in the prompt, till user enters 0, 
+when user enters 0 then stop.  And display sum of numbers entered 
+
+
+2. you have to accept numbers in the prompt,and show a confirm box, if the user click "Yes", the accept more numbers, if not show  sum of numbers entered 
+
+
+
+
+

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script type="text/javascript">
+      g_int = 100;
+      var p_int = 200;
+      function fnBasicOperation() {
+        fn_int = 200;
+        var x = true;
+        var str = "mystr";
+        console.log(x == true);
+        console.log(x == 1);
+        console.log(x === 1);
+        console.log(x + str);
+        console.log(str + x);
+      }
+    </script>
+  </head>
+  <body>
+    <input type="button" onclick="fnBasicOperation()" value="click me" />
+    <script type="text/javascript">
+      console.log("Global Variable value " + g_int);
+      console.log("private variable in script:  Variable value " + p_int);
+      console.log("Global Variable inside function:  " + fn_int);
+    </script>
+  </body>
+</html>

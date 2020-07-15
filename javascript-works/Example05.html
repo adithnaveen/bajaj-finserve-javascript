@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <script type="text/javascript">
+      function fnObj() {
+        obj = new Object();
+        obj.x = 10;
+        obj.y = 20;
+
+        console.log(obj.x);
+        console.log(obj.y);
+        console.log(obj.z);
+      }
+
+      // the function is considered to be as class
+      function Person(name, pid) {
+        this.name = name;
+        this.pid = pid;
+
+        // function display() {
+        //   console.log("display called... ");
+        // }
+
+        var myPrivateFunction = function () {
+          console.log("Hey i'm private function... ");
+        };
+
+        // privileged function
+        this.accessPrivate = function () {
+          console.log("You access privilleged function ");
+          myPrivateFunction();
+        };
+      }
+
+      Person.prototype.display = function () {
+        console.log("Name : " + this.name);
+        console.log("PId : " + this.pid);
+        // this.myPrivateFunction();
+      };
+
+      function fnArray() {
+        var a = new Array(3);
+
+        a[0] = 100;
+        a[1] = 200;
+        a[2] = "Sunday";
+        a[3] = "Monday";
+
+        console.log(a.length);
+
+        for (i = 0; i < a.length; i++) {
+          console.log(a[i]);
+        }
+
+        a.unshift("India");
+        a.push("Asia");
+        console.log(a);
+
+        a.pop();
+        a.shift();
+        console.log(a);
+
+        a.splice(2, 1);
+        console.log(a);
+
+        a.splice(2, 1, "WED", "THU", "FRI");
+        console.log(a);
+
+        console.log("for each... ");
+
+        for (idx in a) {
+          console.log(a[idx]);
+        }
+
+        var newArray = Array(3);
+
+        var newArray1 = new Array(3);
+        var newArray2 = new Array(3);
+        var newArray3 = new Array(3);
+
+        newArray[0] = newArray1;
+        newArray[0] = newArray2;
+        newArray[0] = newArray3;
+      }
+    </script>
+  </head>
+  <body>
+    <input type="button" onclick="fnObj()" value="Function fnObj" />
+    <input type="button" onclick="fnArray()" value="fnArray()" />
+    <script type="text/javascript">
+      var p = new Person("Akhil", 101);
+
+      console.log(p.name);
+      console.log(p.pid);
+
+      p.display();
+      p.accessPrivate();
+      // not accessable directly outside
+      //   p.myPrivateFunction();
+    </script>
+  </body>
+</html>
